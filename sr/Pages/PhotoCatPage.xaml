@@ -70,12 +70,19 @@
         <TextBox x:Name="OpisanieTB" Grid.Column="1" Grid.ColumnSpan="2"
                    Grid.Row="6"
                    HorizontalAlignment="Center" VerticalAlignment="Center"
-                 Width="200" Height="35"></TextBox>
+                 Width="200" Height="35" TextChanged="OpisanieTB_TextChanged"></TextBox>
 
         <ComboBox x:Name="IdPhotoCB" Grid.Column="4" Grid.ColumnSpan="2"
                    Grid.Row="6"
                    HorizontalAlignment="Center" VerticalAlignment="Center"
-                 Width="200" Height="35"></ComboBox>
+                 Width="200" Height="35" SelectionChanged="IdPhotoCB_SelectionChanged"
+                  ItemsSource="{Binding photoes}">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Id_Photo}"></TextBlock>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
                    
     </Grid>
 </Page>

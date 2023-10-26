@@ -30,6 +30,19 @@ namespace sr.Pages
             pets = new List<Pet>(DBConnection.DBConnection.samrab.Pet.ToList());
             this.DataContext = this;
             CatRaPhotoLV.ItemsSource = new List<Photoes>(DBConnection.DBConnection.samrab.Photoes.Where(i => i.Id_Pet == 1).ToList());
+            pets.Insert(0, new Pet() { Id_Employee = -1, Name = "Показать всё!" });
+        }
+
+        private void OpisanieTB_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            CatRaPhotoLV.ItemsSource = new List<Photoes>(DBConnection.DBConnection.samrab.Photoes.Where(i => i.Text.StartsWith(OpisanieTB.Text)));
+        }
+
+        private void IdPhotoCB_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var t = (IdPhotoCB.SelectedItem as Photoes).Id_Photo;
+            CatRaPhotoLV.ItemsSource = DBConnection.DBConnection.samrab.Photoes.
+                Where(i => i.Id_Photo == t).ToList();
         }
     }
 }

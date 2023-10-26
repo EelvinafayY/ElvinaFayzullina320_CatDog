@@ -36,5 +36,10 @@ namespace sr.Pages
         {
             NavigationService.Navigate(new PhotoDogPage());
         }
+
+        private void PlusPhotoBT_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PlusPhotoCatPage());
+        }
     }
 }
