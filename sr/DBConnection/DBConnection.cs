@@ -8,6 +8,6 @@ namespace sr.DBConnection
 {
     internal class DBConnection
     {
-        public static DBConnection samrabEntities = new DBConnection();
+        public static samrabEntities samrab  = new samrabEntities();
     }
 }
