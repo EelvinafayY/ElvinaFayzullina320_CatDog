@@ -116,6 +116,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\PhotoCatPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PhotoDogPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Pages\AuthorizationPage.xaml.cs">
@@ -126,6 +134,12 @@
     </Compile>
     <Compile Include="Pages\dogNubiPage.xaml.cs">
       <DependentUpon>dogNubiPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PhotoCatPage.xaml.cs">
+      <DependentUpon>PhotoCatPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PhotoDogPage.xaml.cs">
+      <DependentUpon>PhotoDogPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

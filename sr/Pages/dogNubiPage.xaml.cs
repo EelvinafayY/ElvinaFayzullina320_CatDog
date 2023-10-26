@@ -31,5 +31,10 @@ namespace sr.Pages
             this.DataContext = this;
             DogNubiLV.ItemsSource = new List<Pet>(DBConnection.DBConnection.samrab.Pet.Where(i => i.Id_Pet == 2).ToList());
         }
+
+        private void PhotoBT_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PhotoDogPage());
+        }
     }
 }
