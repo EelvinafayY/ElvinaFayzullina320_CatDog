@@ -112,6 +112,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\dogNubiPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Pages\AuthorizationPage.xaml.cs">
@@ -119,6 +123,9 @@
     </Compile>
     <Compile Include="Pages\catRaPage.xaml.cs">
       <DependentUpon>catRaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\dogNubiPage.xaml.cs">
+      <DependentUpon>dogNubiPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

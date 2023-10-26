@@ -17,19 +17,19 @@ using System.Windows.Shapes;
 namespace sr.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для catRaPage.xaml
+    /// Логика взаимодействия для dogNubiPage.xaml
     /// </summary>
-    public partial class catRaPage : Page
+    public partial class dogNubiPage : Page
     {
         public static List<Pet> pets { get; set; }
         public static List<Employee> employees { get; set; }
-        public catRaPage()
+        public dogNubiPage()
         {
             InitializeComponent();
-            pets = new List<Pet>(DBConnection.DBConnection.samrab.Pet.Where(i => i.Id_Pet == 1).ToList());
+            pets = new List<Pet>(DBConnection.DBConnection.samrab.Pet.Where(i => i.Id_Pet == 2).ToList());
             employees = new List<Employee>(DBConnection.DBConnection.samrab.Employee.ToList());
             this.DataContext = this;
-            CatRaLV.ItemsSource = new List<Pet>(DBConnection.DBConnection.samrab.Pet.Where(i => i.Id_Pet == 1).ToList());
+            DogNubiLV.ItemsSource = new List<Pet>(DBConnection.DBConnection.samrab.Pet.Where(i => i.Id_Pet == 2).ToList());
         }
     }
 }

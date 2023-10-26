@@ -41,8 +41,12 @@ namespace sr.Pages
                
                 string loginOne = 123.ToString();
                 if (login == loginOne) 
-                { 
-                    NavigationService.Navigate()
+                {
+                    NavigationService.Navigate(new catRaPage());
+                }
+                else
+                {
+                    NavigationService.Navigate(new dogNubiPage());
                 }
                
             }
