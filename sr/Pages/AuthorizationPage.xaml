@@ -8,7 +8,60 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="AuthorizationPage">
 
-    <Grid>
-        
+    <Grid Background="#FFC3BDB6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="2" Grid.ColumnSpan="4"
+                   Grid.Row="1" Text="АВТОРИЗАЦИЯ"
+                   HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="#FF675345" FontWeight="Bold">
+        </TextBlock>
+
+        <TextBlock Grid.Column ="3" Grid.ColumnSpan ="2"
+                   Grid.Row="2" Text="ЛОГИН"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontSize="25" Foreground="#FF675345">
+        </TextBlock>
+        <TextBox x:Name="LoginTB" Grid.Column ="3" Grid.ColumnSpan ="2"
+                   Grid.Row="3" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontSize="25" Foreground="#FF675345"
+                 Width="200"></TextBox>
+
+
+        <TextBlock Grid.Column ="3" Grid.ColumnSpan ="2"
+           Grid.Row="4" Text="ПАРОЛЬ"
+           HorizontalAlignment="Center" VerticalAlignment="Center"
+           FontSize="25" Foreground="#FF675345">
+        </TextBlock>
+        <PasswordBox x:Name="PasswordPB" Grid.Column ="3" Grid.ColumnSpan ="2"
+           Grid.Row="5" 
+           HorizontalAlignment="Center" VerticalAlignment="Center"
+           FontSize="25" Foreground="#FF675345"
+         Width="200"></PasswordBox>
+
+        <Button x:Name="VxodBT" Grid.Column="3" Grid.ColumnSpan="2"
+                Grid.Row="6"
+                Content="ВОЙТИ"
+                HorizontalAlignment="Center" VerticalAlignment="Center"
+                Width="150" Height="35" Background="#FF867162" FontSize="25" Foreground="#FFCAB397" Click="VxodBT_Click"/>
     </Grid>
 </Page>

@@ -24,5 +24,10 @@ namespace sr.Pages
         {
             InitializeComponent();
         }
+
+        private void VxodBT_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
